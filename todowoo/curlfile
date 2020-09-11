@@ -1,0 +1,10 @@
+curl -X "POST" http://127.0.0.1:8000/api/signup -H 'Content_Type: application/json' -d '{"username":"prizrak","password":"aA12345678"}'
+
+
+curl -X "POST" http://127.0.0.1:8000/api/login/ -H 'Content_Type: application/json' -d '{"username":"prizrak3","password":"aA12345678"}'
+
+
+curl http://127.0.0.1:8000/api/todos/ -H 'Authorization: Token 85dc10b85f5ab3fdfe1e0825cb743939b2330b23'
+
+
+curl -X "PUT" http://127.0.0.1:8000/api/todos/14/complete/ -H 'Content_Type: application/json' -H 'Authorization: Token 85dc10b85f5ab3fdfe1e0825cb743939b2330b23'
